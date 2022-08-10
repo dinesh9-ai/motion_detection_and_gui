@@ -25,7 +25,6 @@ void loop() {
   if (a==HIGH){
     digitalWrite(l,HIGH);
     if (p==LOW){
-      //Serial.println("motion detected");
       p=HIGH;
        df=ul();
        int a1=int(df);
@@ -33,7 +32,7 @@ void loop() {
     }}else{
       digitalWrite(l,LOW);
     if(p==HIGH)
-    {//Serial.println("motion ended");
+    {
      p=LOW;
     }}
    
