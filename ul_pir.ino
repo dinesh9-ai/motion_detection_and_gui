@@ -47,11 +47,7 @@ delayMicroseconds(15);
 digitalWrite(t,LOW);
 delayMicroseconds(10);
 pt=pulseIn(e,HIGH);
-pt=pt/1000000;
 //Serial.println(pt);
-pt=pt/3600;
-dist=pt*ss;
-dist=dist/2;
-dist=dist*63360;
+dist=pt*0.034/2;
 return dist;
 }
